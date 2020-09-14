@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Đổi tên loại món"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:background="#FFFFFF"
+        android:id="@+id/tieuDeSuaLoaiMon"
+        ></Button>
+    <EditText
+        android:layout_below="@id/tieuDeSuaLoaiMon"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên loại món"
+        android:fontFamily="monospace"
+        android:id="@+id/edtTenLoaiMonSua"
+       android:textColor="#000000"
+        ></EditText>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtTenLoaiMonSua"
+        android:text="Lưu"
+        android:fontFamily="monospace"
+        android:id="@+id/btnLuuSuaLoaiMon"
+        ></Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtTenLoaiMonSua"
+        android:layout_alignParentRight="true"
+        android:text="Hủy"
+        android:fontFamily="monospace"
+        android:id="@+id/btnHuySuaLoaiMon"
+        ></Button>
+</RelativeLayout>

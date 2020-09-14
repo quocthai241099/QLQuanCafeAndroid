@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietDatMonActivity">
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:text="Tên món"
+
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:id="@+id/tvTenMonHTChiTiet"
+        ></TextView>
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:text="Số lượng"
+
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/tvTenMonHTChiTiet"
+        android:id="@+id/tvSoLuongHTChiTiet"
+        ></TextView>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:text="Thành tiền"
+
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/tvSoLuongHTChiTiet"
+        android:id="@+id/tvThanhTienHTChiTiet"
+        ></TextView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvThanhTienHTChiTiet"
+        android:id="@+id/lvChiTietDatMon"
+        ></ListView>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lvChiTietDatMon"
+        android:text="Tạm tính"
+        android:fontFamily="monospace"
+        android:id="@+id/btnTamTinh"
+        ></Button>
+
+</RelativeLayout>

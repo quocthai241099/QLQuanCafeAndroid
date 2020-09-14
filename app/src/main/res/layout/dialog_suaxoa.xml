@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FDF1"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="QUẢN LÝ LOẠI MÓN"
+        android:paddingTop="10dp"
+        android:textColor="#F44336"
+        android:background="#FFFFFF"
+        android:id="@+id/tvQuanLyLoaiMon"
+        ></TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Đổi tên loại món"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:background="#F2FBE6"
+        android:id="@+id/btnSuaLoaiMon"
+        ></Button>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Xóa loại món"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:id="@+id/btnXoaLoaiMon"
+        android:background="#F2FBE6"
+        ></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120dp"
+      android:id="@+id/btnHuySuaXoaLoaiMon"
+        android:background="#F2FBE6"
+        android:fontFamily="monospace"
+        android:layout_marginTop="10dp"
+        android:text="Hủy"></Button>
+</LinearLayout>

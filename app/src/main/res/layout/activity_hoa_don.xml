@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HoaDonActivity">
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="ID"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/tvIDHoaDon"
+        ></TextView>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="ID Bàn"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tvIDHoaDon"
+        android:id="@+id/tvIDBan"
+        ></TextView>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Ngày lập"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/tvIDBan"
+        android:id="@+id/tvNgayLap"
+        ></TextView>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Tổng tiền"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tvNgayLap"
+        ></TextView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvIDBan"
+        android:id="@+id/lvHoaDon"
+        ></ListView>
+</RelativeLayout>

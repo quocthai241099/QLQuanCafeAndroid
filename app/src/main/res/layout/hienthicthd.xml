@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+
+        android:id="@+id/tvIDHoaDonCTHT"
+        ></TextView>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tvIDHoaDonCTHT"
+        android:id="@+id/tvIDMonCTHT"
+        ></TextView>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/tvIDMonCTHT"
+        android:id="@+id/tvSoLuongCTHT"
+        ></TextView>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/tvThanhTienHTCT"
+        android:layout_toRightOf="@+id/tvSoLuongCTHT"
+        ></TextView>
+
+</RelativeLayout>

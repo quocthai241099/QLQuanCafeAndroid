@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTieuDeThemLoaiMon"
+        android:textSize="30dp"
+        android:text="Thêm loại món"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên loại"
+        android:layout_below="@+id/tvTieuDeThemLoaiMon"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:id="@+id/edtTenLoai"
+        android:layout_marginTop="10dp"
+        ></EditText>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Thêm"
+        android:layout_below="@id/edtTenLoai"
+        android:id="@+id/btnThemLoaiMon"
+        android:fontFamily="monospace"
+
+        ></Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtTenLoai"
+        android:layout_alignParentRight="true"
+        android:fontFamily="monospace"
+        android:id="@+id/btnHuyLoaiMon"
+        android:text="Hủy"
+
+        ></Button>
+</RelativeLayout>

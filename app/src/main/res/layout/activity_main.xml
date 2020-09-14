@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhapActivity">
+
+    <Button
+        android:id="@+id/btnBanHang"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#F44336"
+        android:drawableTop="@drawable/banhang"
+        android:fontFamily="monospace"
+        android:text="Bán hàng"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/btnThuChi"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#8BC34A"
+        android:drawableTop="@drawable/thuchi"
+        android:fontFamily="monospace"
+        android:text="Thu chi"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnBaoCao"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/btnBanHang"
+        android:layout_marginLeft="5dp"
+        android:background="#03A9F4"
+        android:drawableTop="@drawable/baocao"
+        android:fontFamily="monospace"
+        android:text="Báo cáo"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold">
+
+        >
+    </Button>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnThuChi"
+        android:layout_marginRight="5dp"
+        android:drawableTop="@drawable/caidat"
+        android:fontFamily="monospace"
+        android:text="Cài đặt"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#9C27B0"
+        android:id="@+id/btnCaiDat"
+        ></Button>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnBaoCao"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/cofelogo"
+        ></ImageView>
+
+</RelativeLayout>

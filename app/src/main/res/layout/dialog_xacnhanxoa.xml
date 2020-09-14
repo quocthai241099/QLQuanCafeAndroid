@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvXacNhanXoa"
+        android:text="Bạn có muốn xóa"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:fontFamily="monospace"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        ></TextView>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnXacNhanXoa"
+        android:layout_below="@+id/tvXacNhanXoa"
+        android:text="Có"
+        android:fontFamily="monospace"
+        ></Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnHuyXacNhanXoa"
+        android:layout_below="@id/tvXacNhanXoa"
+        android:layout_alignParentRight="true"
+        android:text="Không"
+        android:fontFamily="monospace"
+        android:textColor="#000000"></Button>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CaiDatActivity">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLoaiMon"
+        android:text="Loại món"
+        android:textAlignment="textStart"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        ></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnQuanLyBan"
+        android:text="Bàn"
+        android:textAlignment="textStart"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        ></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnQuanLyNguoiDung"
+        android:text="Người dùng"
+        android:textAlignment="textStart"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        ></Button>
+</LinearLayout>

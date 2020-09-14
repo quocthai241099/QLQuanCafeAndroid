@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#57EFE2"
+
+    tools:context=".SuaNguoiDungActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSuaDangKy"
+        android:text="NGƯỜI DÙNG"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textColor="#E10707"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSuaDangKy"
+        android:layout_marginHorizontal="50dp"
+        android:text="Họ tên"
+        android:fontFamily="monospace"
+        android:id="@+id/tvHoTenSua"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvHoTenSua"
+        android:id="@+id/edtSuaHoTen"
+        android:background="#FFFFFF"
+        android:layout_marginHorizontal="50dp"
+        android:drawableLeft="@mipmap/hoten"
+        android:fontFamily="monospace"
+        android:hint="Họ tên"
+
+        ></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSuaHoTen"
+        android:layout_marginHorizontal="50dp"
+        android:text="User"
+        android:fontFamily="monospace"
+        android:id="@+id/tvUserSua"
+        ></TextView>
+    <EditText
+        android:layout_below="@id/tvUserSua"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtSuaUserDK"
+        android:background="#FFFFFF"
+        android:fontFamily="monospace"
+        android:layout_marginHorizontal="50dp"
+        android:drawableLeft="@mipmap/user"
+        android:hint="Username"
+        android:enabled="false"
+        ></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSuaUserDK"
+        android:layout_marginHorizontal="50dp"
+        android:text="Password"
+        android:fontFamily="monospace"
+        android:id="@+id/tvPassSua"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtSuaPassDK"
+        android:layout_below="@+id/tvPassSua"
+        android:background="#FFFFFF"
+        android:layout_marginHorizontal="50dp"
+        android:drawableLeft="@mipmap/password"
+        android:hint="Password"
+        android:fontFamily="monospace"
+        android:password="true"
+        ></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSuaPassDK"
+        android:layout_marginHorizontal="50dp"
+        android:text="Confirm password"
+        android:fontFamily="monospace"
+        android:id="@+id/tvConfirmPassSua"
+        ></TextView>
+    <EditText
+        android:layout_below="@id/tvConfirmPassSua"
+        android:password="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edtSuaConfirmPass"
+        android:background="#FFFFFF"
+        android:layout_marginHorizontal="50dp"
+        android:drawableLeft="@mipmap/password"
+        android:fontFamily="monospace"
+        android:hint="Confirm Password"
+        ></EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="PHÂN QUYỀN"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#E10707"
+        android:id="@+id/tvSuaPhanQuyen"
+        android:layout_below="@id/edtSuaConfirmPass"
+        android:layout_marginTop="10dp"
+        ></TextView>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radSuaPhanQuyen"
+        android:layout_below="@id/tvSuaPhanQuyen"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radSuaAdmin"
+            android:text="Admin"
+            android:layout_marginLeft="50dp"
+            android:textSize="15dp"
+            android:fontFamily="monospace"
+            android:checked="true"
+            ></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radSuaBanHang"
+            android:text="Bán hàng"
+            android:fontFamily="monospace"
+            android:textSize="15dp"
+            android:layout_marginLeft="140dp"
+            ></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:layout_below="@id/radSuaPhanQuyen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btnDongYSua"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="monospace"
+        android:text="Đồng ý"
+        ></Button>
+
+
+</RelativeLayout>
